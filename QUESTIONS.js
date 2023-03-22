@@ -157,6 +157,29 @@ var sumofarray= (a)=>{
 }
 console.log(sumofarray([1,2,3,4,5,6,7,8,9]));
 
+//D.Return all the prime numbers in an array
+console.log("D.Return all the prime numbers in an array")
+  console.log("USING ARROW FUNCTION");
+let numb = [1,2,3,4,5,6,7,8,9,10];
+let result1 = [];
+var isPrime = (numb)=> {
+  if(numb < 2) return false;
+
+  for (let k = 2; k < numb; k++){
+    if(numb % k == 0){
+      return false;
+    }
+  }
+  return true;
+}
+numb.forEach(function (element) {
+  const item = isPrime(element);
+  if (item) {
+    result1.push(element);
+  }
+});
+console.log(result1);
+
 // E)Return all the palindromes in an array(using arrow function)
 console.log("E)Return all the palindromes in an array")
   console.log("USING ARROW FUNCTION");
